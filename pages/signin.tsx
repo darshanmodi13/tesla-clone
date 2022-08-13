@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Error } from "@material-ui/icons";
 
 const login = () => {
   return (
@@ -13,7 +14,7 @@ const login = () => {
       >
         <h1 className="font-semibold text-4xl text-left">Sign In</h1>
         <p className="text-nav-light text-[14px] text-left mt-8 ml-4 font-semibold tracking-wider">
-          Email Address
+          Email Address <Error className="text-blue rotate-180" />
         </p>
         <input
           type="text"
