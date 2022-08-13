@@ -112,6 +112,9 @@ const Navbar = () => {
             <li className="mt-4">
               <Link href="/">Investors Relations</Link>
             </li>
+            <li className="mt-4">
+              <Link href="/signin">Sign in</Link>
+            </li>
           </ul>
         </div>
       </div>
