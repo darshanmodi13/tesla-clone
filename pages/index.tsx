@@ -12,10 +12,9 @@ const Home: NextPage = () => {
         className={"sticky top-0 pt-3 pb-3 bg-white right-0 z-10 border-black"}
       >
         <Header />
+        <nav className="fixed top-11 z-10 pl-10 pr-10 pt-5 w-full"><Navbar/></nav>
       </nav>
-      <nav className="fixed top-11 z-10 pl-10 pr-10 pt-5 w-full">
-        <Navbar />
-      </nav>
+
       <div>
         <ImageComponent />
         <ImageComponent />

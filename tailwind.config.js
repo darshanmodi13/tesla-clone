@@ -12,7 +12,11 @@ module.exports = {
       secondary: "#fafafa",
       white: "#fff",
       grey: "#9ca3af",
+      black: "#000",
+      transparent : 'transparent',
       "btn-bg": "#171A20cc",
+      offwhite: "#f5f5f5",
+      blue: "#3d69e1",
       nav: {
         light: "#393c41",
         dark: "black",
