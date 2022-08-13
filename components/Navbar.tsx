@@ -55,7 +55,7 @@ const Navbar = () => {
       >
         <div
           className={`float-right h-[100vh] bg-white transition-all ease-out duration-500 ${
-            open ? "w-[25%]" : "w-0"
+            open ? "w-[25%] max-lg:w-[50%] max-sm:w-[60%]" : "w-0"
           }`}
         >
           <div

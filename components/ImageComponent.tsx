@@ -19,7 +19,7 @@ const ImageComponent = () => {
             Order Online for{" "}
             <span className="border-b">Touchless Delivery</span>
           </p>
-          <div className="flex justify-center gap-5 text-[14px] absolute bottom-28 w-full max-md:flex-col max-md:items-center">
+          <div className="flex justify-center gap-5 text-[14px] absolute bottom-28 max-md:bottom-20 max-sm:bottom-16 w-full max-md:flex-col max-md:items-center">
             <button
               className="bg-btn-bg
              text-white pt-[6px] pb-[6px] border-1 rounded-[50px] pl-10 pr-10  w-52 tracking-wider"
