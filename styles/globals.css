@@ -1,26 +1,49 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 * {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.nav-link:nth-child(1):hover ~ .hover-box {
+  width: 6rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+.nav-link:nth-child(2):hover ~ .hover-box {
+  left: 6%;
+  width: 6rem;
+}
+.nav-link:nth-child(3):hover ~ .hover-box {
+  left: 23%;
+  width: 6rem;
+}
+.nav-link:nth-child(4):hover ~ .hover-box {
+  left: 39%;
+  width: 6rem;
+}
+.nav-link:nth-child(5):hover ~ .hover-box {
+  left: 57%;
+  width: 6rem;
+}
+.nav-link:nth-child(6):hover ~ .hover-box {
+  left: 76%;
+  width: 7.1rem;
+}
+
+.link:nth-child(1):hover ~ .hover-box2 {
+  width: 4.9rem;
+}
+.link:nth-child(2):hover ~ .hover-box2 {
+  left: 11%;
+  width: 4.9rem;
+}
+.link:nth-child(3):hover ~ .hover-box2 {
+  left: 52%;
+  width: 4.9rem;
+}
+@media (max-width: 1023px) {
+  .link:nth-child(3) ~ .hover-box2 {
+    left: -20px;
+    width: 4.9rem;
   }
 }
