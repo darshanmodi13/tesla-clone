@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { Close } from "@material-ui/icons";
+
 const Navbar = () => {
-  const [open, setOpen] = useState<boolean>(true);
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <>
       <div className="flex justify-center w-full items-center">
