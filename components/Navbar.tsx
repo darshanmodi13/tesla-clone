@@ -1,9 +1,14 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Close } from "@material-ui/icons";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
+
+  const vw = window.innerWidth;
+  console.log(vw)
+  
   return (
     <>
       <div className="flex justify-center w-full items-center">
@@ -53,10 +58,14 @@ const Navbar = () => {
           open ? "block" : "hidden"
         } `}
       >
-        <div
-          className={`float-right h-[100vh] bg-white transition-all ease-out duration-500 ${
-            open ? "w-[25%] max-lg:w-[50%] max-sm:w-[60%]" : "w-0"
-          }`}
+        <motion.div
+          // initial={{ width: "0vw", x: "25%" }}
+          animate={{
+            width: open ? (vw < 639 ? "60%" : vw < 1023 ? "50%" : "25%") : 0,
+            x: open ? 0 : "50vw",
+          }}
+          transition={{ duration: 0.5 }}
+          className={`float-right h-[100vh] bg-white transition-all ease-out duration-500`}
         >
           <div
             className="mt-4 font-semibold tracking-wider ml-[80%] text-xl"
@@ -116,7 +125,7 @@ const Navbar = () => {
               <Link href="/signin">Sign in</Link>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </>
   );
