@@ -5,9 +5,12 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
-  const [vw,setvw] = useState<number>(window.innerWidth);
+  const [vw, setvw] = useState<number>(0);
 
-  
+  React.useEffect(() => {
+    setvw(window.innerWidth);
+  }, []);
+
   return (
     <>
       <div className="flex justify-center w-full items-center">
