@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Close } from "@material-ui/icons";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
+  const [vw,setvw] = useState<number>(window.innerWidth);
 
-  const vw = window.innerWidth;
-  console.log(vw)
   
   return (
     <>
